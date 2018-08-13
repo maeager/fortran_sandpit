@@ -74,7 +74,7 @@ contains
             print *,"Multi-Device Parallel",z
 
         else
-            print *,"test_oacc_omp: gxOPENACC not supported. ", openacc_version
+            print *,"test_oacc_omp: OPENACC not supported. ", openacc_version
         endif
     end subroutine test_oacc_omp
 

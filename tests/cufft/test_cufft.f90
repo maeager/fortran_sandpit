@@ -1,19 +1,4 @@
-!------------------------------------------------------------------------------!
-! SIMPLE               Elmlund & Elmlund Lab         simplecryoem.com          !
-!------------------------------------------------------------------------------!
-!> Test program for simple CUDA FFT
-!
-! @author
-!
-!
-! DESCRIPTION:
-!> CUDA FFT implementation -- for PGI
 
-!
-! REVISION HISTORY:
-! 27 Nov 2017 - Initial Version
-
-!------------------------------------------------------------------------------
 program test_cufft
     include 'simple_lib.f08'
 
