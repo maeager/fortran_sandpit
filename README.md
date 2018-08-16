@@ -1,8 +1,7 @@
 
 
-# Fortran Checker #
+# Fortran Sandpit #
 
-Various modules, unit tests, and benchmarks for Fortran
 
 # Fortran standards compliance #
 
