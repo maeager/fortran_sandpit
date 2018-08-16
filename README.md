@@ -26,10 +26,12 @@ Tests from gnufor2 source
 
 # ISO Varying strings #
 
-Rich Townsend <rhdt@bartol.udel.edu>
+Rich Townsend <rhdt@bartol.udel.edu>, see license file in directory
 
 Definition of iso_varying_string module, conformant to the API specified in
 ISO/IEC 1539-2:2000 (varying-length strings for Fortran 95).
+
+
 
 # Stats #
 
@@ -44,4 +46,5 @@ RBC --  Dynamic equilibrium model http://www.kellogg.northwestern.edu/rc/worksho
 
 # MPIMP #
 
- Mixed-mode OpenMP/MPI MicroBenchmark Suite (Edinburgh Parallel Computing Centre, http://epcc.ed.ac.uk)
+Mixed-mode OpenMP/MPI MicroBenchmark Suite (Edinburgh Parallel Computing Centre, http://epcc.ed.ac.uk)
+Licensed under the Apache License, Version 2.0
