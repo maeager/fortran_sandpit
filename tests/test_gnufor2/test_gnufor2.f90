@@ -1,5 +1,4 @@
-program simple_test_gnufor2
-include 'simple_lib.f08'
+program test_gnufor2
 use gnufor2
 implicit none
 
@@ -295,4 +294,4 @@ implicit none
     !***********************************************************************************
     !***********************************************************************************
     !***********************************************************************************
-end program simple_test_gnufor2
+end program test_gnufor2
