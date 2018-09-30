@@ -23,19 +23,19 @@ set(SIMPLELIB "${SIMPLE_PATH}/lib/libSIMPLE${SIMPLE_VERSION}.a")
 set(SIMPLE_INCLUDE_PATH "${SIMPLE_SOURCE_PATH}/src/inc")
 set(CMAKE_MODULE_PATH "${SIMPLE_SOURCE_PATH}/cmake" "${SIMPLE_SOURCE_PATH}/cmake/Modules/")
 include(FortranOverride)
-project(simple_cheker Fortran)
+project(fortran_sandpit Fortran)
 
-set(PROJECT_BRIEF "Slof is a program package for checking SIMPLE's library operations in Fortran")
+set(PROJECT_BRIEF "Fortran sandpit is a series of programs for checking SIMPLE's library operations and other tools in Fortran")
 
 #################################################################
 #
 # VERSION
 #
 #################################################################
-set(SLOF_VERSION_MAJOR 3)
-set(SLOF_VERSION_MINOR 0)
-set(SLOF_VERSION_PATCH 0)
-set(SLOF_VERSION "${SLOF_VERSION_MAJOR}.${SLOF_VERSION_MINOR}.${SLOF_VERSION_PATCH}")
+set(${PROJECT_NAME}_VERSION_MAJOR 3)
+set(${PROJECT_NAME}_VERSION_MINOR 0)
+set(${PROJECT_NAME}_VERSION_PATCH 0)
+set(${PROJECT_NAME}_VERSION "${${PROJECT_NAME}_VERSION_MAJOR}.${${PROJECT_NAME}_VERSION_MINOR}.${${PROJECT_NAME}_VERSION_PATCH}")
 
 #################################################################
 #
@@ -48,10 +48,6 @@ option(USE_OPENACC "Use OpenACC for auto GPU parallelization - debugging may dis
 option(USE_CUDA    "GPU NVIDIA - in development" OFF)
 
 option(${PROJECT_NAME}_BUILD_TESTS "Build the test examples" ON)
-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/gui)
-  option(${PROJECT_NAME}_BUILD_GUI "Build the simple GUI " ON)
-endif()
-option(BUILD_SHARED_LIBS "Build the simple library as shared or static (default)" OFF)
 
 #################################################################
 #
@@ -114,7 +110,7 @@ endif()
   add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
   include(JsonFortran)
 
-include ( HarperStd08 )
+# include ( HarperStd08 )
 
 #################################################################
 #
@@ -128,13 +124,13 @@ file(GLOB TESTDIRS
   )
 
 add_subdirectory(tests           bin)
-add_subdirectory(cublas          bin)
-add_subdirectory(cufft           bin)
-add_subdirectory(intel           bin)
-add_subdirectory(memleaks        bin)
-add_subdirectory(mpi_cuda_omp    bin)
-add_subdirectory(mpimp           bin)
-add_subdirectory(openacc         bin)
-add_subdirectory(stats           bin)
+#add_subdirectory(cublas          bin)
+#add_subdirectory(cufft           bin)
+#add_subdirectory(intel           bin)
+#add_subdirectory(memleaks        bin)
+#add_subdirectory(mpi_cuda_omp    bin)
+#add_subdirectory(mpimp           bin)
+#add_subdirectory(openacc         bin)
+#add_subdirectory(stats           bin)
 #add_subdirectory(std08_harper    bin)
-add_subdirectory(varying_strings bin)
+#add_subdirectory(varying_strings bin)

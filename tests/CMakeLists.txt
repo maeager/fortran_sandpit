@@ -44,7 +44,7 @@ endif()
 message( STATUS "Test directories ${TESTDIRS}")
 
 foreach(TESTNAME ${TESTDIRS})
-  set(TESTEXE simple_checker_${TESTNAME})
+  set(TESTEXE ${TESTNAME})
   file(GLOB_RECURSE TESTSOURCES LIST_DIRECTORIES true
     "${TESTNAME}/*.[fF][90][0538]")
   if("" STREQUAL "${TESTSOURCES}")

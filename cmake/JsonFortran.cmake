@@ -11,8 +11,8 @@
 
  add_custom_target(check_json COMMAND ${CMAKE_CTEST_COMMAND})
  add_dependencies ( check  check_json )
- file ( GLOB JF_TEST_SRCS "${CMAKE_SOURCE_DIR}/json_fortran/jf_test_*.F90" )
- file ( COPY "${CMAKE_SOURCE_DIR}/json-fortran/files"
+ file ( GLOB JF_TEST_SRCS "${CMAKE_SOURCE_DIR}/tests/json_fortran/jf_test_*.F90" )
+ file ( COPY "${CMAKE_SOURCE_DIR}/tests/json-fortran/files"
     DESTINATION "${CMAKE_BINARY_DIR}/Testing/" )
   set ( DATA_DIR "${CMAKE_BINARY_DIR}/Testing/files" )
   set_directory_properties ( PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES
