@@ -1,0 +1,6 @@
+[submodule "features/functional-fortran"]
+	path = features/functional-fortran
+	url = https://github.com/wavebitscientific/functional-fortran.git
+[submodule "ErrorHandlingInFortran2003"]
+	path = ErrorHandlingInFortran2003
+	url = https://github.com/koenpoppe/ErrorHandlingInFortran2003.git
